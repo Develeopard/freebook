@@ -1,0 +1,14 @@
+.blog-posts{
+    background-color: $light;
+    padding: 200px 40px 60px 40px;
+    width: 100%;
+
+    .blog-content{
+        max-width: 800px;
+        margin: 0 auto;
+
+        @media (max-width: 860px){
+            max-width: 600px;
+        }
+    }
+}

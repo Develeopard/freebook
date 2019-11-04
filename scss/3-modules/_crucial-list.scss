@@ -1,0 +1,56 @@
+.crucial-list{
+    list-style: none;
+
+    @media (max-width: 840px){
+        text-align: center;
+    }
+
+    li{
+        padding: 30px 0;
+
+        @media (max-width: 840px){
+            margin-bottom: 100px;
+        }
+
+        h3{
+            font-size: 1.6rem;
+            font-weight: normal;
+            margin-bottom: 20px;
+            position: relative;
+
+            &::before{
+                content: '';
+                position: absolute;
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: $dark-orange;
+                top: -15%;
+                left: -80px;
+                right: 0;
+                bottom: 0;
+                background-image: url('../images/check-mark-symbol-1.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            @media (max-width: 930px){
+                
+                &::before{
+                    top: -60px;
+                    left: 50%;
+                    right: 0;
+                    bottom: 0;
+                    transform: translateX(-50%);
+                    // mozda ipak before da stavis na li....
+                }
+            }
+        }
+
+        p{
+            color: $gray;
+        }
+    }
+}

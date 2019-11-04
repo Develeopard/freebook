@@ -1,0 +1,33 @@
+.reviews{
+    background-color: $light;
+    width: 100%;
+    color: $dark;
+
+    .reviews-content{
+        max-width: 85%;
+        margin: 0 auto;
+        padding: 100px 20px 40px 20px;
+
+        .reviews-headline{
+            text-align: center;
+            margin-bottom: 150px;
+
+            h1{
+                font-size: 2.4rem;
+                margin-bottom: 20px;
+            }
+
+            p{
+                max-width: 70%;
+                margin: 0 auto;
+                line-height: 2;
+                letter-spacing: 1.2px;
+                font-size: 1.025rem;
+            }
+
+            @media (max-width: 796px){
+                margin-bottom: 70px;
+            }
+        }
+    }
+}

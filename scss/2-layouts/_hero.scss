@@ -1,0 +1,23 @@
+.hero{
+    background: url('../images/black-black-watch-cellphone-1841841.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    width: 100%;
+    // max-height: calc(100vh + 100px);
+    padding: 200px 0 170px 0;
+
+    // margin: -100px auto;
+
+    .hero-content{
+        // background-color: red;
+        max-width: 85%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // padding: 200px 0 120px 0;
+    }
+}

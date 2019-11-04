@@ -1,0 +1,12 @@
+.get-in-touch{
+    background-color: $light;
+    display: flex;
+    // align-items: center;
+    justify-content: space-around;
+    padding: 0 0 40px 0;
+
+    @media (max-width: 860px){
+        flex-direction: column;
+    }
+
+}

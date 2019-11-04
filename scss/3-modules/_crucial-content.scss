@@ -1,0 +1,28 @@
+.crucial-content{
+    // outline: 1px solid red;
+    padding: 20px 0 20px 0;
+    margin: 100px 0 0 200px;
+    max-width: 40%;
+
+    @media (max-width: 930px){
+        max-width: 100%;
+        padding: 20px 30px;
+        margin: 100px auto;
+    }
+
+    .crucial-text{
+        margin-bottom: 100px;
+
+        h1{
+            font-size: 2rem;
+            color: $dark;
+            margin-bottom: 40px;
+        }
+
+        .tips{
+            color: $gray;
+            font-size: 1.6rem;
+        }
+
+    }
+}

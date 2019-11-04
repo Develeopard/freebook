@@ -1,0 +1,33 @@
+.our-team{
+    background-color: rgb(255, 245, 245);
+    margin-top: 50px;
+    width: 100vw;
+    margin-left: calc(-1 * ((100vw - 100%) / 2));
+    
+    .our-team-content{
+        // border: 2px solid greenyellow;
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+        img{
+            max-width: 600px;
+            height: auto;
+            object-fit: cover;
+            padding: 20px 10px;
+        }
+
+        @media (max-width: 960px){
+            flex-direction: column;
+
+            img{
+                // margin: 0 auto;
+                align-self: center;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

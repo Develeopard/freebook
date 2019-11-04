@@ -1,0 +1,48 @@
+.download-grid{
+    // border: 1px solid yellow;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 40px 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @media (max-width: 620px){
+        grid-gap: 40px 40px;
+    }
+
+    .book{
+        // outline: 1px solid lightpink;
+
+        img{
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+
+            @media (max-width: 360px){
+                max-width: 200px;
+                height: auto;
+            }
+        }
+        
+        figcaption{
+            color: $light;
+            font-size: 1.2rem;
+            font-weight: bold;
+            max-width: 300px;
+            margin: 30px auto 0 auto;
+            transition: color .3s linear;
+            cursor: pointer;
+
+            &:hover{
+                color: $dark-orange;
+                transition: color .3s linear;
+            }
+
+            @media (max-width: 360px){
+                max-width: 200px;
+                margin: 30px auto 0 auto;
+            }
+        }
+    }
+}

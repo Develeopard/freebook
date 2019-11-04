@@ -1,0 +1,41 @@
+.contact-form{
+    background: url('../images/contact.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(10, 40, 80, 0.6);
+    background-blend-mode: overlay;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+
+    .contact-form-content{
+        // border: 3px solid red;
+        grid-column: 2;
+        max-width: 80%;
+
+        .contact-form-text{
+            // border: 1px solid yellow;
+            margin-bottom: 40px;
+            color: $light;
+
+            h1{
+                font-size: 2rem;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px){
+        grid-template-columns: 1fr;
+
+        .contact-form-content{
+            grid-column: 1;
+            margin: 0 auto;
+        }
+    }
+}

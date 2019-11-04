@@ -1,0 +1,19 @@
+.header-invert{
+    background: rgba(7, 6, 6, 0.1);
+    
+    .navbar{
+        .menu{
+            .navigation{
+                .nav-list{
+                    a{
+                        color: $dark;
+                    }
+
+                    .current{
+                        color:$dark-orange;
+                    }
+                }
+            }
+        }
+    }   
+}

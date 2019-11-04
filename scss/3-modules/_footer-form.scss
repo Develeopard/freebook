@@ -1,0 +1,52 @@
+.footer-form{
+    form{
+        // border: 1px solid pink;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+
+        .footer-input{
+            width: 70%;
+            padding: 20px;
+            border-radius: 4px;
+
+            &:hover, &:focus{
+                box-shadow: inset 0px 0px 5px $dark-orange;
+            }
+        }
+
+        .footer-button{
+            background-color: $dark-orange;
+            padding: 20px 0;
+            width: 28%;
+            border-radius: 4px;
+            color: $light;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: all .3s;
+
+            &:hover, &:focus{
+                background-color: transparent;
+                color: $light;
+                border: 1px solid $light;
+                border-radius: 4px;
+            }
+        }
+
+        @media (max-width: 1024px){
+            flex-direction: column;
+
+            .footer-input{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .footer-button{
+                width: 100%;
+            }
+        }
+    }
+}

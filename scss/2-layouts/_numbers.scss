@@ -1,0 +1,39 @@
+.numbers{
+    background-color: $light-orange;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    .box{
+        background-color: $dark-orange;
+        padding: 90px 50px;
+        color: $light;
+        text-align: center;
+        position: relative;
+
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: $light;
+            top: 170px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h1{
+            font-size: 3rem;
+            margin-bottom: 60px;
+        }
+
+        p{
+            font-size: 1.1rem;
+            font-weight: 100;
+        }
+    }
+
+    .box:nth-child(even){
+        background-color: $light-orange;
+    }
+}

@@ -1,0 +1,62 @@
+.collapsible{
+    // background-color: pink;
+    width: 100%;
+    list-style: none;
+
+    .collapsible-header{
+        // background-color: rgb(180, 238, 180);
+        color: $dark-orange;
+        font-weight: 100;
+        padding: 25px 0px;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+
+        h2{
+            max-width: 70%;
+        }
+
+        .plus{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 25px;
+            // border: 1px solid yellow;
+            background-image: url('../images/plus.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        @media (max-width: 600px){
+            h2{
+                font-size: 1.2rem;
+            }
+
+            .plus{
+                top: 20%;
+            }
+        }
+    }
+
+    .collapsible-body{
+        // background-color: rgb(247, 247, 193);
+        padding: 30px 15px;
+        font-size: 1rem;
+        color: $light;
+        line-height: 2;
+    }
+
+    .collapsible-header.active{
+        .plus{
+            background-image: url('../images/minus.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+
+}

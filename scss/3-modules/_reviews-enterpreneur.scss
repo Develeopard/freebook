@@ -1,0 +1,57 @@
+.reviews-enterpreneur{
+    // background-color: red;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 796px){
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .enterpreneur{
+        // background-color: pink;
+        padding: 10px 20px;
+
+        .enterpreneur-quote{
+            // background-color: pink; 
+            border: 1px solid rgb(212, 212, 212);
+            border-radius: 6px;
+            padding: 30px 15px;
+            line-height: 1.9;
+            margin-bottom: 30px;
+            color: $gray;
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                top: -70px;
+                left: 10px;
+                // background-color: black;
+                background-image: url("/images/quote-sign.png");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            @media (max-width: 796px){
+                font-size: .95rem;
+                line-height: 1.5;
+
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .enterpreneur-1{
+        @media (max-width: 796px){
+            margin-bottom: 50px;
+        }
+    }
+}

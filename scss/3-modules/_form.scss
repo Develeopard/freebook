@@ -1,0 +1,38 @@
+form{
+
+    .contact-form-input, textarea{
+        display: block;
+        margin-bottom: 30px;
+        padding: 20px 10px;
+        border-radius: 4px;
+        width: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        &::placeholder{
+            color: $gray;
+        }
+
+        &:hover, &:focus{
+            box-shadow: inset 0px 0px 5px black;
+        }
+    }
+
+    .button-transparent{
+        display: inline-block;
+        border: 1px solid $light;
+        border-radius: 4px;
+        color: $light;
+        text-decoration: none;
+        font-size: .7rem;
+        font-weight: bold;
+        padding: 20px 40px;
+        margin-top: 80px;
+        transition: all .3s;
+
+        &:hover, &:focus{
+            color: $dark;
+            background-color: $light;
+            outline: none;
+        }
+    }
+}

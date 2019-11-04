@@ -1,0 +1,29 @@
+.our-team-text{
+    // background-color: pink;
+    padding: 40px 30px;
+
+    h1{
+        font-size: 2.2rem;
+        color: $dark;
+    }
+
+    .our-team-list{
+        list-style: none;
+        margin-top: 70px;
+
+        li{
+            margin-top: 40px;
+            
+            h3{
+                color: $dark;
+                font-size: 1.4rem;
+                font-weight: normal;
+                color: $dark-orange;
+            }
+
+            p{
+                margin-top: 20px;
+            }
+        }
+    }
+}

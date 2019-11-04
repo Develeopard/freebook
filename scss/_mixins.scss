@@ -1,0 +1,21 @@
+//Global Mixins
+
+
+//buttons
+
+@mixin button{
+    display: inline-block;
+    font-size: .9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: $light;
+    padding: 18px 20px;
+    background-color: $dark-orange;
+    border-radius: 3px;
+    transition: .3s linear;
+    -o-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -webkit-transition: .3s linear;
+}

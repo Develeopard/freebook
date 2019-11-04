@@ -1,0 +1,91 @@
+.hero-text{
+    max-width: 500px;
+    position: relative;
+    padding: 0 10px;
+
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 25%;
+        height: 5px;
+        background-color: $dark-orange;
+        top: 60%;
+        }
+
+        @media (max-width: 410px){
+            &::after{
+                top: 50%;
+            }
+    }
+
+    .big-title{
+        font-size: 4rem;
+        margin-bottom: 10px;
+
+        @media (max-width: 720px){
+            font-size: 3rem;
+        }
+
+        @media (max-width: 410px){
+            font-size: 2rem;
+        }
+    }
+
+    .subtitle{
+        font-size: 2.3rem;
+        line-height: 1.2;
+        margin-bottom: 10px;
+
+        @media (max-width: 720px){
+            font-size: 1.8rem;
+        }
+
+        @media (max-width: 410px){
+            font-size: 1rem;
+        }
+    }
+
+    .subtitle-thin{
+        font-size: 2.3rem;
+        font-weight: normal;
+        margin-bottom: 100px;
+
+        @media (max-width: 720px){
+            font-size: 1.8rem;
+        }
+
+        @media (max-width: 410px){
+            font-size: 1rem;
+            // margin-bottom: 50px;
+        }
+    }
+
+    .tiny-text{
+        font-size: .9rem;
+        color: $light;
+        margin-bottom: 50px;
+    }
+
+    .button{
+        @include button;
+
+        &:hover{
+            background-color: $light;
+            color: $dark-orange;
+            transition: color .5s linear;
+            -o-transition: color .5s linear;
+            -ms-transition: color .5s linear;
+            -moz-transition: color .5s linear;
+            -webkit-transition: color .5s linear;
+        }
+    }
+}
+
+.white-book{
+    width: 40%;
+
+    @media (max-width:1100px){
+        display: none;
+    }
+}

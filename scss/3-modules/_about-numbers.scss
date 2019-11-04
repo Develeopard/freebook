@@ -1,0 +1,31 @@
+.numbers-about{
+    background-color: $light;
+
+    .box-about{
+        background-color: $light;
+
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: $dark-orange;
+            top: 170px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h1{
+            color: $dark-orange;
+        }
+
+        p{
+            color: $dark;
+        }
+    }
+
+    .box-about:nth-child(even){
+        background-color: $light;
+    }
+}
